@@ -1,5 +1,6 @@
 import { readdirSync } from 'fs';
 import { join } from 'path';
+import { defineConfig } from 'father';
 
 // utils must build before core
 // runtime must build before renderer-react
@@ -22,11 +23,11 @@ const tailPkgs = readdirSync(join(__dirname, 'packages')).filter(
   (pkg) => pkg.charAt(0) !== '.' && !headPkgs.includes(pkg),
 );
 
-export default {
-  cjs: { type: 'babel' },
-  esm: {
-    type: 'babel',
+export default defineConfig({
+  cjs: {
+    output: 'lib',
   },
-  runtimeHelpers: true,
-  pkgs: [...headPkgs, ...tailPkgs],
-};
+  esm: {
+    output: 'es',
+  },
+});

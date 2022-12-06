@@ -14,6 +14,9 @@
     "type": "git",
     "url": "https://github.com/ant-design/pro-components"
   },
+  "scripts": {
+    "build": "father build"
+  },
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
@@ -41,6 +44,7 @@
     "classnames": "^2.2.6",
     "dayjs": "^1.11.4",
     "omit.js": "^2.0.2",
+    "rc-table": "^7.28.1",
     "rc-util": "^5.0.1",
     "react-sortable-hoc": "^2.0.0",
     "unstated-next": "^1.1.0",

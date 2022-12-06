@@ -12,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/ant-design/pro-components"
   },
+  "scripts": {
+    "build": "father build"
+  },
   "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",

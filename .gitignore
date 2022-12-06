@@ -40,3 +40,5 @@ screenshot
 .changelogs
 .changelog.md
 packages/components/src/version.ts
+
+.turbo
